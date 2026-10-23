@@ -1,0 +1,190 @@
+/* CSS Utama PMB Politeknik Mulia Rokan - Brand Identity Gerigi, Sawit, & Emas */
+:root {
+  --primary: #1bb28f;        /* Warna Utama Gerigi: #1bb28f */
+  --primary-dark: #1b969d;   /* Warna Gradien: #1b969d */
+  --gear-left: #1bb28f;      /* #1bb28f */
+  --gear-right: #1b969d;     /* #1b969d */
+  --primary-light: #e6faf5;  /* Soft Teal */
+  --accent: #e9b35d;         /* Kuning Keemasan Cincin Logo & Yayasan */
+  --accent-dark: #d99f43;    /* Amber Emas Logo */
+  --accent-light: #fffdf5;   /* Soft Gold */
+  --bg-dark-navy: #0b1120;   /* Biru Dongker */
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #f1f5f9;
+  background-color: #0b1120;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Background Tema Brand Kampus: Biru Dongker Pekat Solid Bersih (#0b1120) */
+.theme-bg-canvas {
+  background-color: #0b1120 !important;
+  background-image: none !important;
+  min-height: 100vh;
+}
+
+/* Card Elevation: Latar 1-2 Tingkat Lebih Terang dari #0b1120 dengan Bayangan Halus */
+.card-elevated {
+  background-color: #131c31 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-elevated:hover {
+  border-color: rgba(27, 178, 143, 0.45);
+  box-shadow: 0 18px 40px -8px rgba(0, 0, 0, 0.55), 0 0 15px rgba(27, 178, 143, 0.15);
+  transform: translateY(-2px);
+}
+
+.theme-card-dark {
+  background: #131c31;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.45);
+}
+
+.theme-card-light {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+/* Gradasi Khusus Warna Gerigi Logo Resmi #1bb28f & #1b969d */
+.bg-gear-gradient {
+  background: linear-gradient(135deg, #1bb28f 0%, #1b969d 100%) !important;
+}
+
+.bg-gear-gradient-h {
+  background: linear-gradient(90deg, #1bb28f 0%, #1b969d 100%) !important;
+}
+
+/* Menu Tertentu dengan Gradasi #1bb28f & #1b969d */
+.menu-gradient-pill {
+  background: linear-gradient(135deg, #1bb28f 0%, #1b969d 100%) !important;
+  color: #ffffff !important;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 14px rgba(27, 178, 143, 0.35);
+  transition: all 0.25s ease;
+}
+
+.menu-gradient-pill:hover {
+  background: linear-gradient(135deg, #e9b35d 0%, #d99f43 100%) !important;
+  color: #0b1120 !important;
+  box-shadow: 0 6px 18px rgba(233, 179, 93, 0.45);
+}
+
+/* Tombol Khusus Gradasi Warna Gerigi Logo Resmi */
+.brand-gear-btn {
+  background: linear-gradient(135deg, #1bb28f 0%, #1b969d 100%);
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 10px 20px -5px rgba(27, 178, 143, 0.4);
+  transition: all 0.3s ease;
+}
+
+.brand-gear-btn:hover {
+  background: linear-gradient(135deg, #e9b35d 0%, #d99f43 100%);
+  color: #0b1120 !important;
+  border-color: #e9b35d;
+  box-shadow: 0 10px 25px -5px rgba(233, 179, 93, 0.45);
+}
+
+.bg-primary { background-color: var(--primary); }
+.bg-primary-dark { background-color: var(--primary-dark); }
+.bg-primary-light { background-color: var(--primary-light); }
+.text-primary { color: var(--primary); }
+.text-primary-dark { color: var(--primary-dark); }
+.border-primary { border-color: var(--primary); }
+
+.bg-accent { background-color: var(--accent); }
+.bg-accent-dark { background-color: var(--accent-dark); }
+.bg-accent-light { background-color: var(--accent-light); }
+.text-accent { color: var(--accent); }
+.text-accent-dark { color: var(--accent-dark); }
+.border-accent { border-color: var(--accent); }
+
+.shadow-custom {
+  box-shadow: 0 10px 25px -5px rgba(15, 118, 110, 0.2), 0 8px 10px -6px rgba(15, 118, 110, 0.1);
+}
+
+.brand-gradient {
+  background: linear-gradient(135deg, #0f766e 0%, #0d9488 50%, #f59e0b 100%);
+}
+
+.gear-spin {
+  animation: spin 35s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Equalizer Audio Animation */
+.equalizer-bar {
+  display: inline-block;
+  width: 3px;
+  background-color: #f59e0b;
+  border-radius: 2px;
+  animation: equalize 1s infinite ease-in-out alternate;
+}
+.equalizer-bar:nth-child(1) { height: 14px; animation-delay: 0.1s; }
+.equalizer-bar:nth-child(2) { height: 20px; animation-delay: 0.3s; }
+.equalizer-bar:nth-child(3) { height: 10px; animation-delay: 0.2s; }
+.equalizer-bar:nth-child(4) { height: 18px; animation-delay: 0.4s; }
+
+@keyframes equalize {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1.2); }
+}
+
+.paused .equalizer-bar {
+  animation: none !important;
+  height: 6px !important;
+}
+
+/* Dropdown Menu Desktop Animation */
+.nav-item-dropdown {
+  position: relative;
+}
+.nav-dropdown-menu {
+  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Glassmorphism Effect */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+/* Print Styling untuk Cetak Kartu */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print, header, footer, nav, .btn-print-hide, #audio-player-widget, #popup-promo-modal {
+    display: none !important;
+  }
+  .print-card {
+    border: 2px solid #000000 !important;
+    box-shadow: none !important;
+    margin: 0 auto !important;
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+}
